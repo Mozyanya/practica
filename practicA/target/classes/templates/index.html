@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ind.css">
+    <title>Data Viewer</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <div class="logo-holder">
+                <img src="images/logo4.png" alt="РЖД" class="logo-img">
+            </div>
+            <div>
+            <ul id="main-menu">
+                <li class="main-menu-item"><a href="#">Контакты</a></li>
+                <li class="main-menu-item"><a href="#">Услуги</a></li>
+                    </ul>
+       </div>
+                </nav>
+    </header>
+    </div>
+    <!-- TEXT -->
+    <section class="cover">
+        <div class="cover-dimmer">
+            <h1>РЖД</h1>
+            <p> Путешествие на поезде — это не только перемещение из точки А в точку Б, это целая история, полная ожиданий и впечатлений. Каждый раз, когда вы вводите данные для поиска билета, начинается новая глава. Сайт РЖД — это портал, через который открывается дорога к новым местам и знакомствам. Это место, где каждый клик приближает вас к следующему приключению, каждый выбор места в вагоне — это шанс увидеть мир под новым углом. И когда вы нажимаете кнопку "Купить билет", вы не просто покупаете проезд, вы начинаете своё собственное путешествие, полное историй, которые ещё предстоит рассказать.</p>
+   <button class="button-cover">Заказать билет</button>
+   </div>
+            <div class="forma">
+    <form id="searchForm" method="get" action="/">
+        <input type="text" id="query" name="query" placeholder="Введите номер" value="введите номер">
+        <input type="submit" value="Поиск"class="btn">
+    </form>
+    <div class="butform">
+        <input type="submit" value="обновить"class="btn">
+    </div>
+    </div>
+    <class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>START</th>
+                    <th>AND</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                {% for result in results %}
+                <tr>
+                    <td>{{ result.id }}</td>
+                    <td>{{ result.name }}</td>
+                    <td>{{ result.start }}</td>
+                    <td>{{ result.and }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    </tr>
+   </div>    
+    
+    <div>
+            <style>
+                body {
+                  background-image: url('images/.jpg.jpg') ;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                }
+              </style>
+        </div>
+</div>
+</body>
+</html>
